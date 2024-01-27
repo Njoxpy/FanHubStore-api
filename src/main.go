@@ -10,6 +10,7 @@ import (
 // function for loading environment variables
 func init() {
 	initializers.LoadEnvVariables()
+	initializers.ConnectDB()
 }
 
 func main() {
