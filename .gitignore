@@ -1,2 +1,24 @@
 FanHubStore-api.exe
 src/FanHubStore-api.exe~
+.env
+
+# .gitignore
+
+# Ignore specific files
+secrets.json
+config.yaml
+.env
+
+# Ignore all files in a directory
+database/config/
+
+# Ignore logs and temporary files
+logs/
+temp/
+
+# Ignore IDE/editor-specific files
+.vscode/
+.idea/
+
+# Ignore dependencies and vendor directory
+vendor/
