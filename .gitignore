@@ -9,6 +9,7 @@ secrets.json
 config.yaml
 .env
 
+.txt
 # Ignore all files in a directory
 database/config/
 
