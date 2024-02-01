@@ -1,16 +1,3 @@
-/*
-- Create a new folder called controllers then inside it create a file called postControllers.go
-- Copy function from main.go
-          func PostsCreate(c *gin.Context) {
-	c.JSON(200, gin.H{
-		"Hello Njox": "Welcome",
-	})
--
-}
-
-
-*/
-
 package controllers
 
 import (
@@ -29,11 +16,12 @@ func PostsCreate(c *gin.Context) {
 
 	if result.Error != nil {
 		c.Status(400)
+		return
 	}
 	
 	// return it
 	c.JSON(200, gin.H{
-		"Hello Njox": "Welcome",
+		"Hello Njox": post,
 	})
 
 }
